@@ -1,61 +1,85 @@
-# Hospitality Experience Intelligence Framework (HEIF)
-# Version 1.1
+# HEIF
 
-HEIF combines a business methodology with a software platform for understanding, assessing, and improving hospitality experiences.
+## Hospitality Experience Intelligence Framework
 
-## Mission
+HEIF (Hospitality Experience Intelligence Framework) is a methodology and software platform for evaluating hospitality experiences through structured observation, evidence collection, and executive reporting.
 
-HEIF exists to help hospitality organizations understand guest experiences, identify opportunities for improvement, and deliver measurable enhancements through a structured, evidence-based assessment methodology supported by software.
+The framework helps hospitality consultants and operators move beyond traditional inspections by measuring the guest experience from the guest's perspective.
+
+---
+
+## Current Prototype
+
+The current interactive prototype is **HAVEN**, the consultant workspace used to conduct hospitality assessments.
+
+### Live Demo
+
+👉 https://mrbobbycunningham-cloud.github.io/HEIF/
+
+---
+
+## Prototype Workflow
+
+The current prototype demonstrates the complete consultant workflow.
+
+1. Dashboard
+2. Assessment Workspace
+3. Guest Journey Selection
+4. Experience Moment Selection
+5. Observation Workspace
+6. Executive Report
+
+The workflow illustrates how consultants move from structured observations to client-ready executive reporting.
+
+---
+
+## Repository Structure
+
+```
+HEIF/
+│
+├── docs/
+├── methodology/
+├── engineering/
+├── prototype/
+│     └── haven-demo/
+├── knowledge/
+└── README.md
+```
+
+---
 
 ## Vision
 
-HEIF will evolve into a commercial platform that enables hospitality consultants, operators, and hospitality brands to assess, analyze, and continuously improve guest experiences through reusable knowledge libraries, structured assessments, analytics, and AI-assisted recommendations.
+HEIF is designed to become an end-to-end hospitality intelligence platform.
 
-## Project Dashboard
+Long-term capabilities include:
 
-| Item | Status |
-|------|--------|
-| **Current Phase** | Foundation & Product Architecture |
-| **Current Sprint** | Sprint 2 – Repository Review & Core Domain Model |
-| **Last Milestone** | Repository initialized and project architecture established |
-| **Next Milestone** | Complete the HEIF Core Domain Model and first Knowledge Library |
+- Guided property assessments
+- Experience scoring
+- Evidence collection
+- AI-assisted insight generation
+- Executive reporting
+- Benchmarking across properties
+- Experience analytics
 
-## Repository Map
+---
 
-| Area | Purpose |
-| --- | --- |
-| `master-product-spec/` | Authoritative product vision, business requirements, roadmap, and release planning. |
-| `methodology/` | HEIF methodology, consulting framework, assessment models, governance, and playbooks. |
-| `engineering/` | Software architecture, engineering standards, APIs, data contracts, implementation guidance, and technical decision records. |
-| `knowledge-libraries/` | Canonical HEIF reference libraries, taxonomies, metadata, controlled vocabularies, and governed schemas. |
-| `prototype/` | Executable proof-of-concept applications and prototype implementations. |
-| `decisions/` | Business, product, and methodology decision records. |
-| `tools/` | Utilities, scripts, templates, and supporting development assets. |
+## Status
 
-This repository is initialized with the project structure only. Business content, knowledge libraries, and production data will be added as the HEIF methodology and platform evolve.
+Current stage:
 
-## Guiding Principles
+Prototype / UX Validation
 
-HEIF is built upon the following principles:
+Purpose:
 
-- Methodology before technology.
-- Evidence over opinion.
-- AI augments—not replaces—consultant expertise.
-- Knowledge should be reusable, governed, and versioned.
-- Recommendations should be transparent, explainable, and evidence-based.
-- Every assessment should produce measurable business value.
-- Continuous improvement is fundamental to the HEIF methodology.
+Validate workflow, usability, and assessment methodology before production development.
 
-## Decision Records
+---
 
-Decision records preserve important project knowledge and provide traceability for future decisions.
+## License
 
-- Business, methodology, and product decisions are documented in `decisions/`.
-- Technical architecture decisions are documented in `engineering/architecture/adr/`.
-- Decision records should reference related decisions where appropriate rather than duplicate information.
+Private intellectual property.
 
-## Repository Status
-
-This repository serves as the authoritative source for all HEIF product, methodology, engineering, governance, and knowledge assets.
-
-As the project matures, additional documentation, reference libraries, prototypes, implementation assets, and production-ready components will be added under version control following established governance practices.
+© HEIF Advisory
+All rights reserved.
