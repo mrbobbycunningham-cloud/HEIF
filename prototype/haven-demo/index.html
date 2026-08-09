@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HAVEN hospitality consulting vision preview.">
+    <title>HAVEN | Consultant Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard" data-view-target="dashboard" aria-label="HAVEN dashboard">
+          <span class="brand-mark">H</span>
+          <span><strong>HAVEN</strong><small>Hospitality intelligence</small></span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <button class="nav-item active" data-view-target="dashboard"><span>◫</span> Dashboard</button>
+          <button class="nav-item" data-view-target="assessment"><span>◇</span> Assessments</button>
+          <button class="nav-item" data-view-target="report"><span>▤</span> Reports</button>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="advisor-avatar">JL</div>
+          <div><strong>Jordan Lee</strong><small>Senior Advisor</small></div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section id="dashboard" class="view active-view" aria-labelledby="dashboard-title">
+          <header class="workspace-header">
+            <div><p class="kicker">Consultant workspace</p><h1 id="dashboard-title">Good morning, Jordan.</h1><p>Here is the work that needs your attention today.</p></div>
+            <div class="dashboard-actions"><button id="reset-demo" class="reset-demo" type="button">Reset demo</button><button class="primary-button" data-view-target="assessment">Open assessment</button></div>
+          </header>
+
+          <section class="metric-grid" aria-label="Workspace summary">
+            <article class="metric-card"><span>Active assessments</span><strong>3</strong><small>1 ready for review</small></article>
+            <article class="metric-card"><span>Recent reports</span><strong>12</strong><small>2 delivered this week</small></article>
+            <article class="metric-card"><span>My tasks</span><strong>4</strong><small>Next due today at 3:00 PM</small></article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="surface assessment-highlight">
+              <div class="section-title"><div><p class="kicker">Active assessment</p><h2>Ocean Breeze Resort</h2></div><span class="status-pill">In review</span></div>
+              <p class="muted">Coastal resort · 214 keys · Charleston, South Carolina</p>
+              <div class="progress-row"><span>Assessment progress</span><strong>78%</strong></div>
+              <div class="progress-track"><span style="width:78%"></span></div>
+              <div class="assessment-meta"><div><small>Current focus</small><strong>Arrival &amp; Welcome</strong></div><div><small>Next step</small><strong>Executive report</strong></div></div>
+              <button class="text-button" data-view-target="assessment">Continue assessment <span>→</span></button>
+            </article>
+
+            <article class="surface list-card">
+              <div class="section-title"><h2>Recent reports</h2><button class="quiet-button" data-view-target="report">View all</button></div>
+              <ul class="report-list">
+                <li><span class="report-icon">R</span><div><strong>Ocean Breeze Resort</strong><small>Draft executive report · Today</small></div><span class="report-status">Draft</span></li>
+                <li><span class="report-icon">R</span><div><strong>The Lark Hotel</strong><small>Executive report · Aug 7</small></div><span class="report-status delivered">Delivered</span></li>
+                <li><span class="report-icon">R</span><div><strong>Harbor House Inn</strong><small>Executive report · Aug 4</small></div><span class="report-status delivered">Delivered</span></li>
+              </ul>
+            </article>
+
+            <article class="surface task-card">
+              <div class="section-title"><h2>My tasks</h2><span class="task-count">4 open</span></div>
+              <ul class="task-list">
+                <li><span class="task-dot high"></span><div><strong>Review arrival observations</strong><small>Ocean Breeze Resort · Today</small></div></li>
+                <li><span class="task-dot"></span><div><strong>Prepare executive summary</strong><small>Ocean Breeze Resort · Today</small></div></li>
+                <li><span class="task-dot"></span><div><strong>Confirm report delivery</strong><small>The Lark Hotel · Tomorrow</small></div></li>
+              </ul>
+            </article>
+
+            <article class="surface quick-actions">
+              <p class="kicker">Quick actions</p><h2>Move work forward.</h2>
+              <div class="quick-action-grid">
+                <button data-view-target="assessment"><span>+</span> Continue assessment</button>
+                <button data-view-target="report"><span>↗</span> Review report</button>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section id="assessment" class="view" aria-labelledby="assessment-title">
+          <header class="subpage-header">
+            <button class="back-button" data-view-target="dashboard">← Dashboard</button>
+            <div class="header-actions"><span class="status-pill">In review</span><button class="primary-button" data-view-target="report">Generate executive report</button></div>
+          </header>
+          <section class="property-hero">
+            <div><p class="kicker">Active assessment</p><h1 id="assessment-title">Ocean Breeze Resort</h1><p>Charleston, South Carolina · 214 keys · Luxury coastal resort</p></div>
+            <div class="property-score"><span>Current HPI</span><strong>82</strong><small>of 100</small></div>
+          </section>
+
+          <section class="workflow-shell" aria-label="Assessment workflow">
+            <div class="workflow-intro"><p class="kicker">Assessment path</p><h2>From property context to client-ready insight.</h2><p>Capture what happened first. Interpret it later.</p></div>
+            <div class="workflow-steps" role="tablist" aria-label="Assessment path stages">
+              <button class="workflow-step active" data-stage="property" role="tab" aria-selected="true"><span>01</span><strong>Property</strong><small>Context &amp; scope</small></button>
+              <button class="workflow-step" data-stage="journey" role="tab" aria-selected="false"><span>02</span><strong>Guest journey</strong><small>Where it happens</small></button>
+              <button class="workflow-step" data-stage="moment" role="tab" aria-selected="false"><span>03</span><strong>Experience moment</strong><small>What matters most</small></button>
+              <button class="workflow-step" data-stage="observation" role="tab" aria-selected="false"><span>04</span><strong>Observation</strong><small>What occurred</small></button>
+              <button class="workflow-step report-step" data-view-target="report" role="tab"><span>05</span><strong>Executive report</strong><small>What to do next</small></button>
+            </div>
+
+            <article id="workflow-detail" class="workflow-detail"></article>
+          </section>
+        </section>
+
+        <section id="report" class="view report-view" aria-labelledby="report-title">
+          <header class="subpage-header report-controls">
+            <button class="back-button" data-view-target="assessment">← Assessment workspace</button>
+            <div class="header-actions"><span class="draft-note">Vision preview · Illustrative data</span><button id="print-report" class="primary-button">Print / Save PDF</button></div>
+          </header>
+          <article class="report-paper">
+            <section class="report-cover">
+              <div class="cover-brand"><span class="brand-mark">H</span><strong>HAVEN</strong></div>
+              <div class="cover-copy"><p>Hospitality Experience Review</p><h1 id="report-title">Ocean Breeze Resort</h1><span>Executive Report · August 2026</span></div>
+              <div class="cover-footer">Prepared for Ocean Breeze Resort<br>Prepared by HAVEN Advisory</div>
+            </section>
+
+            <section class="report-section report-overview">
+              <div class="report-section-heading"><p class="kicker">Executive overview</p><h2>A strong resort experience with clear opportunities to elevate arrival and departure.</h2></div>
+              <div class="hpi-card"><div class="hpi-ring"><div><strong>82</strong><span>HPI™</span></div></div><div><p class="kicker">Hospitality Performance Index</p><h3>Strong foundation</h3><p>Ocean Breeze Resort delivers a thoughtful guest experience with targeted opportunities to improve consistency at key transition moments.</p></div></div>
+            </section>
+
+            <section class="report-section property-information">
+              <div><p class="kicker">Property information</p><h2>Ocean Breeze Resort</h2><p>Luxury coastal resort located in Charleston, South Carolina. The assessment focused on the guest journey from pre-arrival through post-stay follow-up.</p></div>
+              <dl><div><dt>Keys</dt><dd>214</dd></div><div><dt>Assessment focus</dt><dd>Arrival, stay &amp; departure</dd></div><div><dt>Assessment period</dt><dd>August 2026</dd></div></dl>
+            </section>
+
+            <section class="report-section score-section">
+              <div class="report-section-heading"><p class="kicker">Category performance</p><h2>Experience indicators</h2></div>
+              <div class="score-grid">
+                <div><span>Pre-arrival</span><strong>84</strong><i><b style="width:84%"></b></i></div>
+                <div><span>Arrival &amp; welcome</span><strong>74</strong><i><b style="width:74%"></b></i></div>
+                <div><span>Accommodation</span><strong>86</strong><i><b style="width:86%"></b></i></div>
+                <div><span>Guest service</span><strong>84</strong><i><b style="width:84%"></b></i></div>
+                <div><span>Departure &amp; follow-up</span><strong>77</strong><i><b style="width:77%"></b></i></div>
+              </div>
+            </section>
+
+            <section class="report-section insight-grid">
+              <div class="insight strengths"><p class="kicker">Top strengths</p><h2>What guests feel</h2><ul><li>Warm, personal service interactions throughout the stay.</li><li>Well-maintained accommodations that reflect the resort’s positioning.</li><li>Authentic local guidance that helps guests connect with the destination.</li></ul></div>
+              <div class="insight opportunities"><p class="kicker">Improvement opportunities</p><h2>Where consistency matters</h2><ul><li>Reduce uncertainty during high-volume arrival periods.</li><li>Make room-readiness communication more proactive.</li><li>Create a more intentional post-stay follow-up rhythm.</li></ul></div>
+            </section>
+
+            <section class="report-section recommendations">
+              <div class="report-section-heading"><p class="kicker">Priority recommendations</p><h2>Three actions to move forward</h2></div>
+              <ol><li><span>01</span><div><strong>Establish a consistent arrival-host practice.</strong><p>Introduce clear welcome, orientation, and wait-time communication during peak arrival windows.</p></div></li><li><span>02</span><div><strong>Standardize the room-readiness communication path.</strong><p>Give guests timely updates and a thoughtful recovery option when rooms are not ready.</p></div></li><li><span>03</span><div><strong>Connect post-stay outreach to relationship building.</strong><p>Create a simple follow-up cadence that supports review response and future-stay intent.</p></div></li></ol>
+            </section>
+
+            <footer class="report-footer"><strong>HAVEN</strong><span>Hospitality intelligence for meaningful guest experiences.</span><small>Confidential vision-preview report · Illustrative data only</small></footer>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
